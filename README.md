@@ -35,13 +35,13 @@ We have also experimented with environments from the [RPDiff](https://github.com
 
 ## Training a TAX-PoseD model
 
-The current best model config has a long name: `joint_train_pzX-dgcnn-transformer_pzY-pn2_hybridlatentz-global_gradclip1e-4_se3-action_upright-anchor_flow-fix-post-encoder-one-flow-head_joint2global-pzY-sample_anchor2action2global-opt2-pzX-sample_mod_easy_rack`
+To train a 2-rack mug-hanging model:
 
 ```
-python train_residual_flow_multimodal.py --config-path=../configs/rpdiff_data --config-name=joint_train_pzX-dgcnn-transformer_pzY-pn2_hybridlatentz-global_gradclip1e-4_se3-action_upright-anchor_flow-fix-post-encoder-one-flow-head_joint2global-pzY-sample_anchor2action2global-opt2-pzX-sample_mod_easy_rack dataset_root=TODO test_dataset_root=TODO log_dir=TODO rpdiff_descriptions_path=TODO
+python train_residual_flow_multimodal.py --config-path=../configs/icra2024 --config-name=train_2rackvariety_densez_learned_prior dataset_root=TODO test_dataset_root=TODO log_dir=TODO rpdiff_descriptions_path=TODO
 ```
 
-The ICRA submission model configurations can be run on the [multimodal_icra2024](https://github.com/himty/taxposeD/tree/multimodal_icra2024) branch.
+Other ICRA submission model configurations can be found in `configs/icra2024/*`
 
 
 ## Cite
